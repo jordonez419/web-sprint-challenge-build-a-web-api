@@ -18,7 +18,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Task 1: Project Set Up
 
-- [ ] Run `npm install` to install your dependencies.
+- [x ] Run `npm install` to install your dependencies.
 - [ ] Run tests locally executing `npm test`.
 - [ ] Reset the database to its original state executing `npm run resetdb`.
 
@@ -31,13 +31,13 @@ Your finished project must include all of the following requirements:
 A _"test"_ script already exists you can use to run tests against your code.
 A _"resetdb"_ script exists that allows you to reset the database to its original state.
 
-- [ ] Write an _npm script_ named _"start"_ that uses `node` to run the API server.
-- [ ] Write an _npm script_ named _"server"_ that uses `nodemon` to run the API server.
-- [ ] Install _nodemon_ as a development dependency that would not be used in production.
+- [ x] Write an _npm script_ named _"start"_ that uses `node` to run the API server.
+- [ x] Write an _npm script_ named _"server"_ that uses `nodemon` to run the API server.
+- [ x] Install _nodemon_ as a development dependency that would not be used in production.
 
 #### Environment Variables
 
-- [ ] Bring the port number from the `process.env` variable, falling back to `5000` if `process.env.PORT` is undefined **!!!**
+- [ x] Bring the port number from the `process.env` variable, falling back to `5000` if `process.env.PORT` is undefined **!!!**
 
 #### Endpoints
 
@@ -147,7 +147,14 @@ We have provided test data for all the resources.
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+Node.js is basically what allows us to write javascript on the server side, and not having to rely on
+a different server side language like Python. This is useful becasue we can use one language for basically everything.
 1. Understand and explain the use of Middleware.
+Middleware are functions that are invoked when a user makes a request on our server, but is excuted BEFORE
+the user gets a response. They are basically like bouncers at a club, they will not let the request pass until the middleware has determined it has passed its test or requirements.
 1. The basic principles of the REST architectural style.
+REST is a resource protocol, it basically lists out the most efficient way to expose our resources to a user or client. 
 1. Understand and explain the use of Express Routers.
+Express routers are what allow us to make RESTful routes, we can have multiple things on occur on the same route and have them differ by request type. Rather than having many routes with different names on the url
 1. Describe tooling used to manually test the correctness of an API.
+We can test the correctness on an API with Postman by making multiple tupes of requests with different parameters on each request.
